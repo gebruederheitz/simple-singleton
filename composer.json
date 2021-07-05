@@ -1,0 +1,20 @@
+{
+    "name": "gebruederheitz/simple-singleton",
+    "description": "A simple implementation of a singleton as an extensible abstract class or as a trait.",
+    "type": "library",
+    "license": "GPL-3.0-only",
+    "autoload": {
+        "psr-4": {
+            "Gebruederheitz\\SimpleSingleton\\": "Gebruederheitz/SimpleSingleton/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andreas Maros",
+            "email": "andreas.maros@gebruederheitz.de"
+        }
+    ],
+    "require": {
+        "php": "^7.3"
+    }
+}
