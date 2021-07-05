@@ -1,6 +1,6 @@
 <?php
 
-namespace Gebruederheitz\WpAsyncPostsProvider\Traits;
+namespace Gebruederheitz\SimpleSingleton;
 
 interface SingletonInterface
 {
