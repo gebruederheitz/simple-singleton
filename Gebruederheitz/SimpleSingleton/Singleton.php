@@ -1,8 +1,13 @@
 <?php
 
-namespace Gebruederheitz\WpAsyncPostsProvider\Traits;
+namespace Gebruederheitz\SimpleSingleton;
 
-trait Singleton
+/**
+ * If you need to support several types of Singletons in your app, you can
+ * define the basic features of the Singleton in a base class, while moving the
+ * actual business logic (like logging) to subclasses.
+ */
+class Singleton implements SingletonInterface
 {
     /**
      * The actual singleton's instance almost always resides inside a static
