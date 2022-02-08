@@ -1,6 +1,6 @@
 {
   "name": "@gebruederheitz/simple-singleton-util",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utilities for the gebruederheitz/simple-singleton PHP composer package",
   "main": "",
   "engines": {
