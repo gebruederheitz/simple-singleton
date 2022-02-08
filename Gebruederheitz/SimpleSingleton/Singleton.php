@@ -12,16 +12,20 @@ class Singleton implements SingletonInterface
     /**
      * Singleton's constructor needs to be protected to allow subclassing.
      */
-    protected function __construct() { }
+    protected function __construct()
+    {
+    }
 
     /**
      * Cloning and unserialization are not permitted for singletons.
      */
-    protected function __clone() { }
+    protected function __clone()
+    {
+    }
 
     public function __wakeup()
     {
-        throw new \Exception("Cannot unserialize singleton");
+        throw new \Exception('Cannot unserialize singleton');
     }
 
     /**
@@ -31,6 +35,7 @@ class Singleton implements SingletonInterface
     {
         $subclass = static::class;
         if (!isset(self::$instances[$subclass])) {
+            /** @phpstan-ignore-next-line */
             self::$instances[$subclass] = new static();
         }
         return self::$instances[$subclass];
